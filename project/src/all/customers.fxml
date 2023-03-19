@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="630.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="all.customersController">
+   <children>
+      <TableView fx:id="csttable" layoutX="4.0" layoutY="146.0" prefHeight="480.0" prefWidth="791.0">
+        <columns>
+          <TableColumn fx:id="cstaddress" prefWidth="262.0" text="Address" />
+            <TableColumn fx:id="cstphone2" prefWidth="129.0" text="Phone 2" />
+            <TableColumn fx:id="cstphone" prefWidth="129.0" text="Phone" />
+            <TableColumn fx:id="cstname" prefWidth="213.0" text="Name" />
+          <TableColumn fx:id="cstid" minWidth="0.0" prefWidth="42.0" text="ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="501.0" layoutY="31.0" prefHeight="26.0" prefWidth="283.0" promptText="search" />
+      <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="29.0" layoutY="20.0" onMouseClicked="#backhome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/yellow-home-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="744.0" layoutY="90.0" onMouseClicked="#cstRemove" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Delete-group-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="myinvoice" maxWidth="417.0" minHeight="20.0" minWidth="225.0" prefHeight="601.0" prefWidth="321.0" style="-fx-background-color: F5CEE59; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="all.InvoiceController">
+   <children>
+      <Label layoutX="124.0" layoutY="50.0" prefHeight="52.0" prefWidth="157.0" text="Hot Pizza">
+         <font>
+            <Font name="Baskerville Old Face" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="112.0" fitWidth="133.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/hot-pizza-logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="94.0" layoutX="205.0" layoutY="127.0" startX="-187.0" />
+      <Label layoutX="15.0" layoutY="179.0" prefHeight="19.0" prefWidth="78.0" text="CST NAME :" />
+      <Label layoutX="15.0" layoutY="202.0" text="MOBILE :" />
+      <Label layoutX="15.0" layoutY="138.0" prefHeight="19.0" prefWidth="95.0" text="INVOICE NO :" />
+      <Label layoutX="15.0" layoutY="158.0" prefHeight="19.0" prefWidth="78.0" text="DATE &amp; TIME:" />
+      <Text layoutX="42.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ش/سعيد الشرقاوى متفرع من ش/احمد ماهر     على ناصية محل اولادنا                  " wrappingWidth="237.0" />
+      <Line endX="99.0" layoutX="202.0" layoutY="225.0" startX="-184.0" />
+      <Text layoutX="35.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us :  " wrappingWidth="78.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="82.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACEBOOK.COM /HOTPIZZA      INSTAGRAM.COM/HOTPIZZA" wrappingWidth="177.990234375" />
+      <Label layoutX="36.0" layoutY="427.0" prefHeight="32.0" prefWidth="270.0" text="01092447384 - 01129780434 - 0502221386 ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="fintable" layoutX="11.0" layoutY="234.0" prefHeight="157.0" prefWidth="301.0" stylesheets="@application2.css">
+        <columns>
+          <TableColumn fx:id="item" prefWidth="115.0" sortable="false" text="Item" />
+          <TableColumn fx:id="size" minWidth="7.0" prefWidth="58.0" sortable="false" text="Size" />
+            <TableColumn fx:id="qty" prefWidth="31.0" sortable="false" text="Qty" />
+            <TableColumn fx:id="price" prefWidth="36.0" sortable="false" text="Price" />
+            <TableColumn fx:id="amount" prefWidth="56.0" sortable="false" text="Amount" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TableView>
+      <Label layoutX="206.0" layoutY="392.0" prefHeight="21.0" prefWidth="54.0" text="Total :">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </padding>
+</AnchorPane>
