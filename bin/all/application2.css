@@ -1,0 +1,78 @@
+ 
+ 
+
+  
+.table-button:hover{
+	-fx-background-color: transparent;
+}
+
+
+.table-view {
+	-fx-border-color: transparent;
+	    -fx-font-size:12;
+		-fx-background-color: transparent; 
+}
+
+
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-font-size:13;
+	-fx-background-color: -fx-light-wight-color;
+	-fx-border-color: -fx-wight-color;
+}
+
+.table-view .column-header .label{
+	-fx-font-weight: bold; 
+	-fx-alignment: center-left;
+}
+/* This is just magic */
+.table-row-cell:filled {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent -fx-lightest-wight-color -fx-lightest-wight-color -fx-lightest-wight-color, transparent;
+	-fx-border-insets: 0, 1;
+}
+
+.table-row-cell:empty {
+	-fx-background-color: transparent;
+}
+
+.table-row-cell:filled:hover {
+	-fx-background-color: -fx-light-wight-color;
+}
+ 
+.table-row-cell:filled:selected {
+  	-fx-background-color: wight;
+
+}
+
+
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: wight;
+}
+
+
+.table-view .cell:filled{
+	-fx-cell-size: 20;
+	-fx-alignment: center-left;
+}
+
+
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: white;
+}
+
+
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: -fx-wight-color;
+}
+
+
+.table-view .placeholder .label {
+	-fx-text-fill: red;
+	-fx-padding:15px;
+}

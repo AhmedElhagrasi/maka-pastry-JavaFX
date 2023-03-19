@@ -1,0 +1,18 @@
+ 
+ 
+ 
+ 
+ 
+.table-row-cell:hover{
+    -fx-background-color: FFDFE3;
+}
+
+.table-row-cell:selected{
+    -fx-background-color:  #F5BEBC;
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+}
+
+ 
